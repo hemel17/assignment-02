@@ -270,7 +270,7 @@ figure:hover .overlay {
   gap: 1rem;
 }
 
-.game-catagories figure{
+.game-catagories figure {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -278,8 +278,42 @@ figure:hover .overlay {
   border: 2px solid white;
 }
 
-.game-catagories figure:hover{
+.game-catagories figure:hover {
   border: 2px solid var(--primary-color);
   border-radius: 2.5rem;
   cursor: pointer;
 }
+
+/* footer styles */
+footer {
+  margin-top: 1rem;
+  background-color: #0b0223;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  padding-top: 3rem;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+footer p {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
