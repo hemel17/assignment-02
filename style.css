@@ -316,4 +316,86 @@ footer p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* responsive design */
 
+/* responsive for tablet */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-links {
+    flex-direction: column;
+  }
+
+  .goat-section {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .goat-img,
+  .goat-text {
+    width: 100%;
+  }
+
+  .goat-text h1 {
+    font-size: 2rem;
+  }
+
+  .goat-text span {
+    font-size: 3rem;
+  }
+
+  .online-games h2 {
+    font-size: 2rem;
+  }
+
+  .game-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .play-games {
+    margin-top: 0;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .play-texts {
+    margin-top: 3rem;
+  }
+
+  .play-texts h2 {
+    font-size: 2rem;
+  }
+
+  .game-catagories-section h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .game-catagories{
+    gap: 0.5rem;
+  }
+
+  .game-catagories figure {
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid white;
+  }
+
+  .game-catagories {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  footer ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer ul:nth-child(4){
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
