@@ -231,11 +231,11 @@ figure:hover .overlay {
 .play-char-2 {
   position: relative;
   left: 60%;
-  bottom: 30%;
+  bottom: 10%;
   width: 50%;
 }
 
-.play-texts{
+.play-texts {
   margin-top: 6rem;
 }
 
@@ -245,12 +245,41 @@ figure:hover .overlay {
   font-weight: 700;
 }
 
-.play-texts span{
+.play-texts span {
   color: var(--secondary-color);
 }
 
-.play-texts p{
+.play-texts p {
   color: var(--gray);
-font-size: 1.1rem;
-font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* game catagories styles */
+.game-catagories-section h2 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.game-catagories {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.game-catagories figure{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid white;
+}
+
+.game-catagories figure:hover{
+  border: 2px solid var(--primary-color);
+  border-radius: 2.5rem;
+  cursor: pointer;
 }
