@@ -23,6 +23,7 @@
 }
 
 .btn {
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -30,7 +31,7 @@
   border: none;
   outline: none;
   border-radius: 20px;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.25rem;
   font-weight: 600;
   font-size: 1.25rem;
 }
@@ -64,14 +65,19 @@ header {
 
 .header-links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header-links li {
-  margin-left: 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.header-links li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .header-links li a {
@@ -79,8 +85,54 @@ header {
   color: #000;
 }
 
-.header-links li:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
+/* goat styles */
+.goat-section {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goat-text {
+  background-image: url(images/Group\ 14.png);
+  width: 50%;
+}
+
+.goat-text h1 {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.goat-text span {
+  color: var(--secondary-color);
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.goat-text ul {
+  margin-bottom: 2rem;
+}
+
+.goat-text li {
+  color: var(--gray);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.goat-text .rough-btn {
+  background-color: var(--secondary-color);
+  margin-left: 1.5rem;
+}
+
+.goat-img {
+  width: 50%;
+  height: 30%;
+}
+
+.goat-img img {
+  width: 100%;
 }
