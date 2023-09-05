@@ -362,6 +362,16 @@ footer p {
     gap: 2rem;
   }
 
+  .play-games figure {
+    position: relative;
+  }
+
+  .play-char-2 {
+    position: absolute;
+    bottom: -10%;
+    right: 10%;
+  }
+
   .play-texts {
     margin-top: 3rem;
   }
@@ -375,7 +385,7 @@ footer p {
     font-size: 2rem;
   }
 
-  .game-catagories{
+  .game-catagories {
     gap: 0.5rem;
   }
 
@@ -390,12 +400,12 @@ footer p {
     gap: 0.5rem;
   }
 
-  footer ul{
+  footer ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  footer ul:nth-child(4){
+  footer ul:nth-child(4) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
