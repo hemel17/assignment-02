@@ -199,7 +199,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border: 4px solid var(--primary-color);
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -266,22 +267,28 @@ figure:hover .overlay {
 .game-catagories {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.game-catagories h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 .game-catagories figure {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid white;
+  padding: 0.75rem;
+  border: 2px solid transparent;
 }
 
 .game-catagories figure:hover {
   border: 2px solid var(--primary-color);
   border-radius: 2.5rem;
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 /* footer styles */
@@ -338,6 +345,7 @@ footer p {
   .goat-img,
   .goat-text {
     width: 100%;
+    text-align: center;
   }
 
   .goat-text h1 {
@@ -354,6 +362,7 @@ footer p {
 
   .game-cards {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
 
   .play-games {
@@ -381,7 +390,7 @@ footer p {
   }
 
   .game-catagories-section h2 {
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-size: 2rem;
   }
 
@@ -395,9 +404,106 @@ footer p {
     border: 2px solid white;
   }
 
-  .game-catagories {
+  .game-catagories figure img{
+    width: 2rem;
+  }
+
+  .game-catagories figure h3{
+    font-size: 0.5rem;
+  }
+
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer ul:nth-child(4) {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* tablet responsive */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .goat-section {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .goat-img,
+  .goat-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .goat-text h1 {
+    font-size: 2rem;
+  }
+
+  .goat-text span {
+    font-size: 3rem;
+  }
+
+  .online-games h2 {
+    font-size: 2rem;
+  }
+
+  .game-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .play-games {
+    margin-top: 0;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .play-games figure {
+    position: relative;
+  }
+
+  .play-char-2 {
+    position: absolute;
+    bottom: -10%;
+    right: 10%;
+  }
+
+  .play-texts {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .play-texts h2 {
+    font-size: 2rem;
+  }
+
+  .game-catagories-section h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+  .game-catagories {
     gap: 0.5rem;
+  }
+
+  .game-catagories figure {
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid white;
+  }
+
+  .game-catagories figure img{
+    width: 2rem;
+  }
+
+  .game-catagories figure h3{
+    font-size: 0.75rem;
   }
 
   footer ul {
